@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss';
+import Search from './components/Search';
+import DateAndTime from './components/DateAndTime';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div className='date-and-time'>
+  <DateAndTime />
+</div>
+<div className='search'>
+  <Search />
+</div>
+<div className='city'></div>
     </div>
   );
 }
+
 
 export default App;
