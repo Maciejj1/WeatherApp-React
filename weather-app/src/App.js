@@ -1,11 +1,10 @@
-
 import './App.scss';
 import CurrentLocation from './components/CurrentLocation';
-
 import DateAndTime from './components/DateAndTime';
   import React,{useState} from 'react';
-
   import axios from 'axios';
+  import { WiWindy } from 'weather-icons-react'
+  import { Icon } from '@iconify/react';
   
 function App() {
     const [data , setData] = useState({})
@@ -30,6 +29,7 @@ function App() {
     <DateAndTime />
   <div className='search-bar'>
       <input  
+      className='search-city'
       onKeyPress={searchLocation}
       type="text"
       placeholder="Wyszukaj Miasto"
@@ -43,19 +43,20 @@ function App() {
       <div className='city'>
         <p>{data.name}</p>
       </div>
-      <div className='temp'>
-        {data.main ? <h1>{Math.round(data.main.temp )}°C</h1> : null}
+      <div className='city-temp'>
+        {data.main ? <h1>Temperatura: {Math.round(data.main.temp )}°C</h1> : null}
       </div>
-      <div className='fells-temp'>
-        {data.main ? <h2>{Math.round(data.main.feels_like )}°C</h2>: null}
+      <div className='city-fells-temp'>
+        {data.main ? <h2>Odczuwalna temperatura: {Math.round(data.main.feels_like )}°C</h2>: null}
       </div>
-      <div className='description'>
-        {data.weather ? <p>{data.weather[0].main}</p> : null}
+      <div className='city-weather-description'>
+        {data.weather ? <p>{data.weather[0].main }</p> : null}
       </div>
-      <div className='wind'>
-        {data.wind ? <p>{Math.round(data.wind.speed)} KPH</p>: null}
+      
+     <div className='city-wind-speed'>
+      {data.wind ? <p><Icon icon="uil:wind" color="black" className='wind-icon' /> {Math.round(data.wind.speed)} KPH</p>: null}
       </div>
-    </div>
+    </div> 
   </div>
   )
   };
