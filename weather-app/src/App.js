@@ -54,7 +54,7 @@ function App() {
       </div>
       
      <div className='city-wind-speed'>
-      {data.wind ? <p><Icon icon="uil:wind" color="black" className='wind-icon' /> {Math.round(data.wind.speed)} KPH</p>: null}
+      {data.wind ? <p><Icon icon="uil:wind" color="black" className='wind-icon' /> Wiatr: {Math.round(data.wind.speed)} KM/H</p>: null}
       </div>
     </div> 
   </div>

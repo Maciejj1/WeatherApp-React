@@ -2,8 +2,11 @@ body {
   width: 99%;
   height: 100%;
   background-image: url(https://img.android.com.pl/images/user-images/2021/12/Deszcz-meteorow-ok.jpg);
+  background-position: top center;
+  background-size: 100%;
   justify-content: center;
   display: flex;
+  margin-top: 100px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-conatiner {
