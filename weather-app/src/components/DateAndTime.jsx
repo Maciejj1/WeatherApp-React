@@ -9,7 +9,7 @@ var DateAndTime = () => {
   return (
   
   <div className='date-and-time'>
-<p value={displaytodaysdate} readOnly="true"></p>
+<p value={displaytodaysdate} ></p>
 {dt}<br />{displaytime}
 
 
