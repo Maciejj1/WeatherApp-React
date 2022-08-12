@@ -1,47 +1,117 @@
-body {
-  width: 99%;
-  height: 100%;
-  background-image: url(https://img.android.com.pl/images/user-images/2021/12/Deszcz-meteorow-ok.jpg);
-  background-position: top center;
-  background-size: 100%;
-  justify-content: center;
-  display: flex;
-  margin-top: 100px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@media screen and (min-width: 1024px) {
+  body {
+    width: 99%;
+    height: 100%;
+    background-image: url(https://img.android.com.pl/images/user-images/2021/12/Deszcz-meteorow-ok.jpg);
+    background-position: top center;
+    background-size: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .main-conatiner {
+  }
+  .search-city {
+    width: 600px;
+    height: 50px;
+    font-size: 28px;
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.424);
+    height: auto;
+    text-align: center;
+    width: auto;
+  }
+  .city {
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+  }
+  .city-temp {
+    color: white;
+    text-align: center;
+  }
+  .city-feels-temp {
+    color: white;
+  }
+  .city-weather-description {
+    color: white;
+  }
+  .city-wind-speed {
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  h2 {
+    color: white;
+  }
 }
-.main-conatiner {
-}
-.search-city {
-  width: 600px;
-  height: 50px;
-  font-size: 28px;
-}
-.container {
-  background-color: rgba(0, 0, 0, 0.424);
-  height: auto;
-  text-align: center;
-  width: auto;
-}
-.city {
-  background-color: white;
-  text-align: center;
-  font-size: 40px;
-}
-.city-temp {
-  color: white;
-  text-align: center;
-}
-.city-feels-temp {
-  color: white;
-}
-.city-weather-description {
-  color: white;
-}
-.city-wind-speed {
-  background-color: white;
-  font-size: 30px;
-  text-align: center;
-}
-h2 {
-  color: white;
+@media screen and (max-width: 1023px) {
+  body {
+    width: auto;
+    height: auto;
+    background-position: top center;
+    background-size: 100%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://iphoneswallpapers.com/wp-content/uploads/2018/06/New-York-City-Rain-Storm-Clouds-iPhone-Wallpaper-iphoneswallpapers_com.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .main-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .search-city {
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    font-size: 22px;
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.424);
+    height: auto;
+    text-align: center;
+    width: auto;
+  }
+  .city {
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+  }
+  .city-temp {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  .city-feels-temp {
+    color: white;
+    font-size: 20px;
+  }
+  .city-weather-description {
+    color: white;
+    font-size: 20px;
+  }
+  .city-wind-speed {
+    background-color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+  h2 {
+    color: white;
+    font-size: 20px;
+  }
 }
